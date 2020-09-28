@@ -1,0 +1,31 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(187, 186, 186, 0.849);
+    margin: 0px -10px 20px 0px;
+    background-color: #f5f8f9;
+}
+.sidebarText {
+    color: rgba(94, 93, 93, 0.849);
+    font-size: 20px;
+    padding: 15px;
+}
+.sidebarText:hover {
+    text-decoration: none;
+    transition: .6s;
+    animation: shake .2s linear infinite alternate;  
+    /* infinite 無限的循環 */
+    color: rgb(69, 228, 162);
+}
+@keyframes shake {
+    0% {transform: translateY(-5px);}
+  100% {transform: translateY(5px);}
+}
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+  }

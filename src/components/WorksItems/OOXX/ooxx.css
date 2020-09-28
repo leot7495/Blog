@@ -1,0 +1,64 @@
+.ooxx {
+    width: 300px;
+    height: 300px;
+
+    display: grid;
+    /* 分三行 */
+    grid-template-rows: 100px 100px 100px;
+    /* 分三列 */
+    grid-template-columns: 100px 100px 100px;
+    
+    background-color: #123456;
+}
+.cell {
+    width: 100px;   
+    height: 100px;
+    background-clip: content-box;
+    padding: 5px;
+    border: 1px solid #fff;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* 如果 元件上的屬性有 oko 或 okx 才會加上這特CSS屬性 */
+.X:not(.OkX):not(.OkO)::before{
+    content: 'X';
+    opacity: .5;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 按下叉叉 */
+.OkX::before{
+    content: 'X';
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: not-allowed;
+}
+
+/* 如果 元件上的屬性有 oko 或 okx 才會加上這特CSS屬性 */
+.O:not(.OkO):not(.OkX)::before{
+    content: 'O';
+    opacity: .5;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 按下圈圈 */
+.OkO::before{
+    content: 'O';
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: not-allowed;
+}

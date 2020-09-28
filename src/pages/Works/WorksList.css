@@ -1,0 +1,23 @@
+.WorksHeaderImg {
+    transform: translateY(-50px);
+}
+.WorksSlice {
+    display: flex;
+    flex-wrap: wrap;
+}
+.WorksItems {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    margin: 10px 0;
+    height: 80vh;
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .WorksItems {
+        width: 100%;
+    }
+}

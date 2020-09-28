@@ -1,0 +1,41 @@
+.header {
+    position: relative;
+}
+
+.Blogtext {
+    position: absolute;
+    /* display: flex; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 100px;
+    font-style: italic;
+    color: rgb(138, 136, 136);
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.containerDiv {
+    padding: 0px 60px ;
+}
+.navMedai {
+    display: flex;
+}
+.mediaSidebar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.mediaCSScontent{
+    display: flex;
+    flex-direction: column;
+}
+@media Screen and (max-width : 1000px) { 
+    .Blogtext {
+        font-size: 50px;
+    }
+    .navMedai {
+        display: flex;
+        flex-direction: column;
+    }
+}

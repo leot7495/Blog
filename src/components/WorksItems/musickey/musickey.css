@@ -1,0 +1,38 @@
+.keys{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* position:absolute; */
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+
+}
+.key{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+    transition: 0.2s;
+}
+.playing{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    transform: scale(1.2);
+    border: 2px solid yellow;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 2px;
+}

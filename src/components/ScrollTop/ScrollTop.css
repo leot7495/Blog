@@ -1,0 +1,29 @@
+.ScrollTopComponent {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: hsl(34, 57%, 70%, .8);
+    transition: 0.8s;
+    z-index: 1;
+}
+
+.ScrollTopComponent:hover {
+    background-color: hsl(34, 57%, 70%);
+    cursor: pointer; /*游標變箭頭*/
+}
+.scrollTopIcon{
+    position: absolute;
+    font-size: 50px;
+    opacity: .7;
+    top: 18%;
+    right: 18%;
+    transition: 0.8s;
+}
+.scrollTopIcon:hover {
+    cursor: pointer;
+    opacity: 1;
+    
+}

@@ -1,0 +1,72 @@
+.contenttext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.header{
+    transform: translateY(-50px);
+}
+
+.longImg{
+    height: 150px;
+    background-image: url(https://images.unsplash.com/photo-1510148567806-766658eb5b86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-attachment: fixed;
+    background-size: 100%;
+    margin: 30px 0px 30px 0px;
+}
+
+.threeContent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.oneContent1 , .oneContent2 , .oneContent3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 25px;
+    width: 25%;
+    word-break: break-all;/* 強制換行 */
+}
+.oneContent1 h4 , .oneContent2 h4 , .oneContent3 h4 {
+    line-height: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .contentimg {
+        display: none;
+    }
+    .oneContent1 {
+        display: none;
+    }
+    .oneContent2 , .oneContent3 {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .oneContent3 {
+        display: none;
+    }
+}
+
+.homeIcons {
+    font-size: 80px;
+    color: rgb(58, 157, 223);
+    margin: 0 0 20px 0;
+    text-align: center;
+    transform: translateY(5px);
+}
+.homeIcons:hover {
+    color: rgb(247, 127, 207);
+    transition: .5s;
+    animation: sIcons .2s linear infinite alternate;
+}
+@keyframes sIcons {
+    0%   {transform: rotate(30deg);}
+    100% {transform: rotate(-30deg);}
+}
